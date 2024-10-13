@@ -1,0 +1,104 @@
+.main {
+  padding: 50px 100px 0px;
+  position: relative;
+  height: 100vh;
+}
+
+.textDiv {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  & p:nth-child(1) {
+    font-family: var(--font1);
+    font-weight: 400;
+    font-size: 20px;
+    color: #998e8e;
+  }
+  & div {
+    & h1:nth-child(1) {
+      padding-left: 60px;
+    }
+    & h1:nth-child(3) {
+      padding-left: 90px;
+    }
+  }
+  & h1 {
+    width: 400px;
+    font-family: var(--font2);
+    font-weight: 700;
+    font-size: 70px;
+    color: #000;
+    line-height: 100%;
+    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  }
+  & p {
+    font-family: var(--font1);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 130%;
+    color: #998e8e;
+    width: 500px;
+  }
+}
+
+.buttonDiv {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-top: 30px;
+  & button {
+    background: #4e8655;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 242px;
+    height: 55px;
+    font-family: var(--font1);
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+  }
+}
+
+.heroImgWrap {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-image: url("../../../assets/heroBlock/heroImg.svg");
+  background-size: cover;
+  width: 700px;
+  height: 100vh;
+  padding: 50px 100px 0 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+
+  & div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    & a {
+      font-family: var(--font1);
+      font-weight: 400;
+      font-size: 20px;
+      color: #fff;
+      text-decoration: none;
+    }
+
+    & button {
+      border-radius: 10px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 168px;
+      height: 45px;
+      background: #4e8655;
+      font-family: var(--font1);
+      font-weight: 400;
+      font-size: 20px;
+      color: #fff;
+    }
+  }
+}

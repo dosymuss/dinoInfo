@@ -1,0 +1,24 @@
+.miniImage {
+  border-radius: 18px;
+  width: 404px;
+  height: 222px;
+  object-fit: cover;
+}
+
+.main {
+  border-radius: 18px;
+  width: 404px;
+  height: 222px;
+  position: relative;
+}
+
+.text {
+  font-family: var(--font1);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  color: #fff;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+}

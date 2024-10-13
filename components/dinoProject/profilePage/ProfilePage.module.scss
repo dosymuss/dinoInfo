@@ -1,0 +1,19 @@
+.miniImageDiv {
+  display: flex;
+  gap: 20px;
+}
+
+.textMiniImageDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  height: calc(100vh - 145px);
+}
+
+.main {
+  position: relative;
+  z-index: 10;
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,168 @@
+.inp {
+  width: 420px;
+  height: 56px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #72b5be;
+  font-family: var(--font1);
+  font-weight: 400;
+  font-size: 20px;
+  color: #000000;
+}
+
+.inpPass {
+  width: 100%;
+  height: 56px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-family: var(--font1);
+  font-weight: 400;
+  font-size: 20px;
+  color: #000000;
+}
+
+.inpBtnDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 420px;
+  border-bottom: 1px solid #72b5be;
+  padding-right: 10px;
+}
+
+.main {
+  position: relative;
+}
+
+.label {
+  position: absolute;
+  top: 0.7em;
+  left: 4px;
+  font-size: 20px;
+  color: #72b5be;
+  transition: color 0.2s, transform 0.2s;
+  font-family: var(--font1);
+  pointer-events: none; /* Лейбл не мешает клику на инпут */
+}
+
+.inp:focus + .label {
+  color: #72b5be;
+  transform: scale(0.9) translate(-0.5em, -1.25em); /* Перемещение и масштабирование лейбла */
+}
+
+.inp:not(:placeholder-shown) + .label {
+  color: #72b5be;
+  transform: scale(0.9) translate(-0.5em, -1.25em);
+}
+
+/* Лейбл возвращается на исходное положение, если инпут пуст */
+.inp:placeholder-shown + .label {
+  transform: none;
+  color: #72b5be;
+}
+
+.inpPass:focus ~ .label {
+  color: #72b5be;
+  transform: scale(0.9) translate(-0.5em, -1.25em); /* Перемещение и масштабирование лейбла */
+}
+
+.inpPass:not(:placeholder-shown) ~ .label {
+  color: #72b5be;
+  transform: scale(0.9) translate(-0.5em, -1.25em);
+}
+
+/* Лейбл возвращается на исходное положение, если инпут пуст */
+.inpPass:placeholder-shown ~ .label {
+  transform: none;
+  color: #72b5be;
+}
+
+.inpErr {
+  width: 420px;
+  height: 56px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #dd6f6f; // Красный цвет при ошибке
+  font-family: var(--font1);
+  font-weight: 400;
+  font-size: 20px;
+  color: #dd6f6f; // Красный цвет текста при ошибке
+}
+
+.labelErr {
+  position: absolute;
+  top: 0.7em;
+  left: 4px;
+  font-size: 20px;
+  color: #dd6f6f; // Красный цвет для лейбла при ошибке
+  transition: color 0.2s, transform 0.2s;
+  font-family: var(--font1);
+  pointer-events: none;
+}
+
+.inpPassErr {
+  width: 100%;
+  height: 56px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-family: var(--font1);
+  font-weight: 400;
+  font-size: 20px;
+  color: #dd6f6f;
+}
+
+.inpBtnDivErr {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  width: 420px;
+  border-bottom: 1px solid #dd6f6f;
+  padding-right: 10px;
+}
+
+.inpErr:focus + .labelErr {
+  color: #dd6f6f;
+  transform: scale(0.9) translate(-0.5em, -1.25em); /* Перемещение и масштабирование лейбла */
+}
+
+.inpErr:not(:placeholder-shown) + .labelErr {
+  color: #dd6f6f;
+  transform: scale(0.9) translate(-0.5em, -1.25em);
+}
+
+/* Лейбл возвращается на исходное положение, если инпут пуст */
+.inpErr:placeholder-shown + .labelErr {
+  transform: none;
+  color: #dd6f6f;
+}
+
+.inpPassErr:focus ~ .labelErr {
+  color: #dd6f6f;
+  transform: scale(0.9) translate(-0.5em, -1.25em); /* Перемещение и масштабирование лейбла */
+}
+
+.inpPassErr:not(:placeholder-shown) ~ .labelErr {
+  color: #dd6f6f;
+  transform: scale(0.9) translate(-0.5em, -1.25em);
+}
+
+/* Лейбл возвращается на исходное положение, если инпут пуст */
+.inpPassErr:placeholder-shown ~ .labelErr {
+  transform: none;
+  color: #dd6f6f;
+}
+
+.errText {
+  font-family: var(--font1);
+  font-weight: 400;
+  font-size: 16px;
+  color: #dd6f6f;
+  margin-top: 7px;
+  width: 420px;
+}

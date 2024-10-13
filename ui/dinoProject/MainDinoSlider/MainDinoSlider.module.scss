@@ -1,0 +1,91 @@
+
+.swiperMain {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper {
+  height: 100%;
+  width: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background-color: transparent !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 55%;
+}
+
+.customPrev,
+.customNext {
+  position: absolute;
+  bottom: 20px; /* Подними кнопки чуть выше, чтобы они лучше смотрелись */
+  z-index: 10;
+  cursor: pointer;
+  background-color: var(--colorG);
+  width: 50px; /* Сделай кнопки чуть меньше */
+  height: 50px;
+  border-radius: 10px; /* Сделай их круглыми */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  & img {
+    width: 20px; /* Сделай иконки чуть меньше */
+  }
+}
+
+.customPrev {
+  left: 150px; /* Перемести кнопку влево */
+}
+
+.customNext {
+  right: 150px; /* Перемести кнопку вправо */
+}
+
+.mySwiper {
+  border-radius: 18px;
+  width: 100%;
+  max-width: 420px; /* Установи максимальную ширину */
+  height: auto;
+}
+
+.slideWrap {
+  position: relative;
+  width: 420px;
+  transition: opacity 1s ease;
+
+  & a {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%; /* Лучше использовать left для центрации */
+    transform: translate(-50%, -50%);
+    background: #4e8655;
+    border-radius: 10px;
+    padding: 15px 50px;
+    width: 292px;
+    height: 55px;
+    font-family: var(--font1);
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+    transition: opacity 0.5s ease; /* Добавляем плавный переход для opacity */
+  }
+
+  &:hover a {
+    opacity: 1; /* Скрываем кнопку при наведении на слайд */
+  }
+}

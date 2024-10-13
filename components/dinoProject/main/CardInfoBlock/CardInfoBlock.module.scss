@@ -1,0 +1,55 @@
+.main {
+  transition: height 1s ease;
+  border-radius: 18px 18px 0 0;
+  width: 704px;
+  height: 505px;
+  background-color: #b5b0b0;
+  padding: 50px;
+  position: absolute;
+  bottom: 0;
+}
+
+.main:hover {
+  height: 555px;
+}
+
+.imageDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+
+  & img {
+    width: 250px;
+  }
+
+  & p {
+    font-family: var(--font2);
+    font-weight: 400;
+    font-size: 35px;
+    color: #000;
+  }
+}
+
+.afterText {
+  margin-top: 20px;
+  font-family: var(--font1);
+  font-weight: 400;
+  font-size: 25px;
+  color: #fff;
+}
+
+.watchBtn {
+  margin-top: 40px;
+  background: #4e8655;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 228px;
+  height: 45px;
+  font-family: var(--font1);
+  font-weight: 400;
+  font-size: 20px;
+  color: #fff;
+}

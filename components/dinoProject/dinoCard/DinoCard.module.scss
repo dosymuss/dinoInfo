@@ -1,0 +1,43 @@
+.main {
+  border-radius: 18px;
+  width: 606px;
+  height: 543px;
+  position: relative;
+  background-size: cover;
+}
+
+.buttonDiv {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #4e8655;
+  border-radius: 0 18px;
+  width: 267px;
+  height: 61px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+
+  & button {
+    background-color: transparent;
+  }
+}
+
+.yearText {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 18px;
+  width: 204px;
+  height: 61px;
+  background: #4e8655;
+  font-family: var(--font1);
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 130%;
+  color: #fff;
+}

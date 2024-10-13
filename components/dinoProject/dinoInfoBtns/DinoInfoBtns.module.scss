@@ -1,0 +1,17 @@
+.main {
+  border-radius: 18px;
+  width: 284px;
+  height: 94px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  background: #4e8655;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  & button {
+    background-color: transparent;
+    & img {
+      width: 45px;
+    }
+  }
+}

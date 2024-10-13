@@ -1,0 +1,15 @@
+.dinosWrap {
+  width: 1272px;
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+  margin-bottom: 100px;
+}
+
+.spinnerWrap {
+  height: calc(100vh - 145px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

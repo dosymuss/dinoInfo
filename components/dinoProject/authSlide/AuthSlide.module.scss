@@ -1,0 +1,59 @@
+/* ImageSlider.module.css */
+.slide-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.slide-content img {
+  width: 100%;
+  height: calc(100vh - 150px);
+  object-fit: cover;
+}
+
+.slide-content p {
+  font-family: var(--font2);
+  font-weight: 700;
+  font-size: 45px;
+  color: #000;
+}
+.slide-content div {
+  height: 250px;
+  background-color: #1c5e66;
+  padding: 20px;
+  width: 720px;
+}
+
+/* Дополнительные стили для Swiper */
+.swiper-pagination-bullet {
+  background-color: #888;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #000;
+}
+
+.mySwiper,
+.mySwiperLog {
+  height: calc(100% - 50px);
+  width: 720px;
+  background: #1c5e66;
+  border-radius: 18px;
+  position: absolute; /* Или relative */
+  top: 20px;
+  left: 20px; /* Вы уже используете это значение для выравнивания по оси X */
+  transform: translateY(-50%);
+  transition: transform 0.5s ease; /* Плавный переход для обоих состояний */
+}
+
+/* Изначальное положение */
+.mySwiper {
+  transform: translateX(0); /* Начальное положение в 0px */
+}
+
+/* Положение при сдвиге */
+.mySwiperLog {
+  transform: translateX(730px); /* Перемещение на 750px вправо */
+}

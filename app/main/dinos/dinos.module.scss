@@ -1,0 +1,30 @@
+.dinosWrap {
+    width: 1272px;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    margin-bottom: 100px;
+  }
+  
+  .category {
+    font-family: var(--font2);
+    font-weight: 500;
+    font-size: 45px;
+    color: #000;
+    margin-bottom: 20px;
+  }
+  
+  .main {
+    position: relative;
+    overflow-x: hidden;
+  }
+  
+  .loaderDiv {
+    height: calc(100vh - 145px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  

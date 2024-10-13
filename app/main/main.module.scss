@@ -1,0 +1,45 @@
+
+.title {
+  font-family: var(--font2);
+  font-weight: 700;
+  font-size: 100px;
+  color: #000;
+}
+
+.textDiv {
+  width: 700px;
+
+  & div {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    margin-top: 15px;
+  }
+
+  & a {
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 45px;
+    background: #4e8655;
+    font-family: var(--font1);
+    font-weight: 400;
+    font-size: 18px;
+    color: #fff;
+  }
+}
+
+.textAndSlide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.blockDiv {
+  position: relative;
+  height: 600px;
+  display: flex;
+  justify-content: space-between;
+}

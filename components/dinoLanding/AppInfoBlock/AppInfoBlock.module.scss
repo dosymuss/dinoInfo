@@ -1,0 +1,26 @@
+.main {
+    height: 150px;
+    background-color: var(--colorG);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 100px;
+  }
+  
+  .infoItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    & img {
+      width: 70px;
+    }
+  
+    & p {
+      width: 300px;
+      font-family: var(--font2);
+      font-weight: 700;
+      font-size: 25px;
+      color: #fff;
+    }
+  }
+  

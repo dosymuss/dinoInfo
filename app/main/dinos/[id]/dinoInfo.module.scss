@@ -1,0 +1,48 @@
+.textDiv {
+  margin-top: 50px;
+  & p {
+    font-family: var(--font2);
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: -0.03em;
+    color: #000;
+    margin-bottom: 20px;
+  }
+}
+
+.spinner {
+  height: calc(100vh - 145px);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imageText {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 80px;
+}
+
+.main {
+  position: relative;
+  z-index: 10;
+  padding-bottom: 50px;
+}
+
+.infoTitle {
+  font-family: var(--font2);
+  font-weight: 700;
+  font-size: 40px;
+  color: #000;
+  margin: 60px 0;
+}
+
+.textBlockDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
